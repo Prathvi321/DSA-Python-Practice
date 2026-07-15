@@ -81,7 +81,7 @@ class Queue:
             if len(self.list) + len(a) > self.max_size:
                 print("The new element in queue cannot be added")
             else:
-                for item in reversed(a):
+                for item in (a):
                     self.list.insert(0, item)
     
         except Exception as e:
