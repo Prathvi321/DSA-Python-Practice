@@ -114,17 +114,15 @@ my_queue.push(20, 30, 40)  # Pushing multiple items at once
 # 3. Display the current state of the queue
 print("--- Displaying Queue (Front to Back) ---")
 my_queue.display()
-# Output order will be: 10, 20, 30, 40
 
 # 4. Try to exceed the maximum size constraint
 print("--- Testing Max Size Cap ---")
 my_queue.push(50, 60)      # Queue has 4 items. Adding 2 more exceeds max_size (5)
-# Output: "The new element in queue cannot be added"
 
 # 5. Pop elements from the queue (FIFO: First-In, First-Out)
 print("--- Popping Elements ---")
 popped_item_1 = my_queue.pop()
-print(f"Popped item: {popped_item_1}")  # Output: 10 (The first item we pushed)
+print(f"Popped item: {popped_item_1}")
 
 popped_item_2 = my_queue.pop()
 print(f"Popped item: {popped_item_2}")  # Output: 20
@@ -132,10 +130,8 @@ print(f"Popped item: {popped_item_2}")  # Output: 20
 # 6. Display the queue after popping
 print("\n--- Displaying Queue After Pops ---")
 my_queue.display()
-# Output order will be: 30, 40
 
 # 7. Initialize a queue with a predefined list
 print("--- Initializing Queue with Existing List ---")
 pre_filled_queue = Queue(5, initial_list=[100, 200, 300])
 pre_filled_queue.display()
-
